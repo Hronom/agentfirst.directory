@@ -1,59 +1,67 @@
 ---
 slug: "hronaut"
 name: "Hronaut"
-description: "A visible local browser with persistent isolated workspaces for coding agents over MCP."
+description: "Visible local browser workspaces for coding agents over MCP"
 category: "web-browser-interaction-tools"
 tags:
   - "browser"
   - "mcp"
-  - "persistent-workspaces"
-  - "human-handoff"
+  - "local-first"
+  - "persistent-session"
+  - "human-in-the-loop"
   - "coding-agents"
 websiteUrl: "https://hronaut.dev"
 githubUrl: "https://github.com/hronaut/hronaut"
 logoUrl: "https://www.google.com/s2/favicons?sz=64&domain_url=https://hronaut.dev"
-ogImageUrl: "https://hronaut.dev/hronaut-social-card-v1-11-56.png"
-pricing: "source-available"
+ogImageUrl: "https://hronaut.dev/hronaut-social-card.png"
+pricing: "paid"
 classification: "agent-enabling"
 entityType: "software-application"
-developerName: "Hronaut"
+developerName: "Hronom"
 docsUrl: "https://hronaut.dev/setup"
 pricingUrl: "https://hronaut.dev/#pricing"
-licenseUrl: "https://github.com/hronaut/hronaut/blob/main/LICENSE.md"
+licenseUrl: "https://github.com/hronaut/hronaut/blob/main/LICENSE"
 interfaces:
-  - "MCP"
+  - "Streamable HTTP MCP"
+  - "Electron desktop application"
 deploymentModes:
   - "local"
 evidenceSources:
-  - title: "Hronaut public product page"
+  - title: "Hronaut official website"
     url: "https://hronaut.dev/"
-    claim: "Hronaut describes a local, visible browser for coding agents with named workspaces, persistent browser context and human control; it supports Windows, macOS and Linux."
-    accessedAt: "2026-09-11"
+    claim: "Hronaut describes a local visible browser workspace for coding agents, with a 10-day trial followed by paid named-user plans and no automatic conversion from the trial."
+    accessedAt: "2026-09-14"
     sourceType: "official-product-page"
-  - title: "Hronaut setup guide"
-    url: "https://hronaut.dev/setup"
-    claim: "Hronaut documents a local loopback Streamable HTTP MCP endpoint and client setup, with visible human takeover for sign-in, 2FA, CAPTCHA and consequential steps."
-    accessedAt: "2026-09-11"
-    sourceType: "official-documentation"
-  - title: "Hronaut source and license"
+  - title: "Hronaut public repository — browser and MCP boundaries"
     url: "https://github.com/hronaut/hronaut"
-    claim: "The public repository is inspectable and the product is source-available under the Hronaut Subscription and Trial License."
-    accessedAt: "2026-09-11"
+    claim: "The public repository documents a visible persistent Electron browser, durable agent workspaces over MCP, named local browser context, human takeover, and authoritative postcondition read-back."
+    accessedAt: "2026-09-14"
     sourceType: "official-repository"
+  - title: "Hronaut v2.4.1 release"
+    url: "https://github.com/hronaut/hronaut/releases/tag/v2.4.1"
+    claim: "The current public release notes document authority-generation visibility in consequential action reviews, consolidated workspace and access controls, delayed-favicon recovery, and stale credential-fill rejection."
+    accessedAt: "2026-09-14"
+    sourceType: "official-release-notes"
+  - title: "Hronaut subscription and trial license"
+    url: "https://github.com/hronaut/hronaut/blob/main/LICENSE"
+    claim: "The public license describes source visibility, a single 10-day evaluation per named user, and paid ongoing use after the trial."
+    accessedAt: "2026-09-14"
+    sourceType: "official-license"
 verificationLevel: "documentation-reviewed"
-classificationRationaleMd: "Hronaut materially empowers agent-first workflows through a local loopback MCP endpoint, named isolated workspaces, visible browser state and human takeover. It is an execution workspace, not an autonomous agent runtime."
+classificationRationaleMd: "Hronaut materially empowers an external coding agent by supplying a persistent local visible browser workspace, MCP execution boundary, scoped browser context, and human takeover controls; it is not itself the planning agent."
 inclusionRationaleMd: "The agent-facing value is substantive: an agent can operate a named browser workspace through MCP and resume after a session boundary while a person retains visible control of consequential steps."
-bestForMd: "Agents that need a local, visible browser workspace to preserve scoped browser context between compatible sessions and pause for human-only steps."
+bestForMd: "Coding agents that need a named visible local browser workspace, persistent tabs between sessions, human takeover during sign-in, 2FA, or consequential writes, and authoritative read-back after browser actions."
 notBestForMd: "Teams seeking a hosted browser fleet, stealth or CAPTCHA-solving service, unattended cloud execution or a general-purpose agent memory layer."
-limitationsMd: "Hronaut runs locally and its MCP endpoint listens on loopback. It does not claim hosted execution, stealth, CAPTCHA solving, universal identity management or unattended reliability. Current public terms are a 10-day trial from the first agent tool call, then $4/month or $24/year per named user, up to three active devices, under the Hronaut Subscription and Trial License."
+limitationsMd: "Hronaut is a local desktop execution layer, not a hosted browser service or orchestration platform; compatibility depends on the calling MCP client and site. The product is source-available and requires a subscription after its limited trial."
 unknownsMd: "Compatibility with a specific coding-agent client depends on that client's local Streamable HTTP MCP support and the active Hronaut profile configuration."
 isIndexable: true
 ---
 
-Hronaut is a local, visible browser workspace for coding agents. It keeps named workspaces and browser context available between compatible sessions while leaving the person able to inspect and take over the browser.
+Hronaut is a visible, persistent Electron browser that exposes durable local agent workspaces through MCP. Each workspace keeps its own browser profile and site data, while people can watch, pause, approve, or take over a task when a manual step is required.
 
 ## So agents can...
 
-- resume a named, isolated browser workspace after a coding-agent session ends;
-- inspect and operate a local browser through MCP while keeping the visible state available to a person;
-- pause for sign-in, 2FA, CAPTCHA, payment or another consequential step, then resume after human takeover and state checks.
+- Navigate and interact with websites through a visible local browser workspace
+- Reuse named browser context and tabs across compatible agent sessions
+- Pause for human sign-in, 2FA, CAPTCHA, payment, or other consequential steps
+- Continue only after a caller verifies the authoritative external result

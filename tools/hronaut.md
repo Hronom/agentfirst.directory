@@ -13,7 +13,7 @@ tags:
 websiteUrl: "https://hronaut.dev"
 githubUrl: "https://github.com/hronaut/hronaut"
 logoUrl: "https://www.google.com/s2/favicons?sz=64&domain_url=https://hronaut.dev"
-ogImageUrl: "https://hronaut.dev/hronaut-social-card.png"
+ogImageUrl: "https://hronaut.dev/hronaut-social-card-v1-11-56.png"
 pricing: "paid"
 classification: "agent-enabling"
 entityType: "software-application"
